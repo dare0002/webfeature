@@ -5,16 +5,11 @@
 <header>
         <!-- MENU -->
         <nav class="navbar">
+          <div class="container">
             <ul class="left-menu">
                 <li class="dropdown">
                     <a href="#" class="dropdown-link">Shop</a>
                     <div class="dropdown-menu">
-                        <div class="dropdown-column">
-                            <h3 class="#">Om os</h3>
-                            <a href="#">Samarbejde</a>
-                            <a href="#">Støt</a>
-                            <a href="#">Kontakt</a>
-                        </div>
                         <div class="dropdown-column">
                             <a href="#">Skjorter</a>
                             <a href="#">Tørklæder</a>
@@ -33,32 +28,22 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="#">Community</a></li>
-                <li><a href="omos.html">Om os</a></li>
-                <li><a href="#">Gavekort</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="#">Om os</a></li>
+                <li><a href="#">Samarbejde</a></li>
+                <li><a href="#">Støt</a></li>
+                <li><a href="#">Kontakt</a></li>
             </ul>
             <div class="logo">
-                <a href="index.stro"><img src="/img/logo.webp" width="400"> alt="Logo"></a>
+                <a href="index.astro"><img src="/img/logo_itmv.webp" width="400" alt="Logo"></a>
             </div>
-
-
-
-
-
-
-            <div class="right-menu">
+            <ul class="right-menu">
                 <div class="icon">
-                    <a href="" class="icon"><iconify-icon icon="iconamoon:search-thin"></iconify-icon></a>
+                    <a href="checkout.html" class="icon" id="search"><i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <div class="icon">
-                    <a href="" class="icon"> <iconify-icon icon="ph:heart-thin"></iconify-icon></a>
-                </div>
-                <div class="icon">
-                    <a href="checkout.html" class="icon" id="cart"><iconify-icon
-                            icon="ph:shopping-cart-thin"></iconify-icon></a>
-                </div>
+                <li><a href="#">Kurv</a></li>
+            </ul>
             </div>
+          </div>
         </nav>
 
 
@@ -72,18 +57,17 @@
                 </div>
             </div>
             <ul class="menu-links">
-                <li><a href="produktoversigt.html">Shop</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="omos.html">Om os</a></li>
-                <li><a href="#">Gavekort</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="#">Om os</a></li>
+                <li><a href="#">Samarbejde</a></li>
+                <li><a href="#">Støt</a></li>
+                <li><a href="#">Kontakt</a></li>
             </ul>
             <div class="flex_item">
-                <a href="index.html"><img src="billeder/jørnæs_logo.svg" alt="Logo" id="logo_burger"></a>
+                <a href="index.astro"><img src="/img/logo_itmv.webp" width="400" alt="Logo"></a>
             </div>
             <div class="flex_item">
-                <div class="cart-icon">
-                    <iconify-icon icon="ph:shopping-cart-thin"></iconify-icon>
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
         </nav>
@@ -92,56 +76,64 @@
 
 
 
-    <style>
+<style>
 
-        * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+header a{
+  text-transform: uppercase;
+}
+
 :root {
-  --gron: #3cb371;
+  --black: #010101;
 }
 
-.header_text {
-  width: 100%;
-  padding: 3px 0;
-  margin: 0;
-  font-family: "futura-pt", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 0.7rem;
-  text-align: center;
-  color: var(--gron);
-  background-color: #efefef;
-  box-sizing: border-box;
-}
-
-/* Navbar stilarter */
+/* Navbar */
 #burger_menu {
   display: none;
 }
 
 .navbar {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
   color: #000000;
-  padding: 35px 20px 30px 20px;
-  font-family: "futura-pt", sans-serif;
-  font-weight: 300;
+  padding: 35px 20px 120px 20px;
+  font-family: "helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
   font-style: normal;
   width: 100%;
 }
+
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.left-menu{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 .navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  /* padding-top: 20px; */
+  z-index: 1;
 }
 
+
+/* space mellem links */
 .navbar ul li {
   display: inline;
   margin-right: 20px;
@@ -153,29 +145,29 @@
 }
 
 .navbar a:hover {
-  color: var(--gron);
+  color: var(--black);
 }
 
 .logo img {
   display: block;
   position: absolute;
-  left: 48%;
-  top: 48px;
-  width: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+  width: 145px;
 }
 
 .icon {
-  background-color: white;
-  color: #000000;
+  color: #1f1e1e;
   cursor: pointer;
   width: 90%;
-  padding: 21px 20px 0px 3px;
+  /* padding: 21px 20px 0px 3px; */
   border: none;
   font-weight: 100;
   font-size: 1.4rem;
 }
 
-#cart {
+#search {
   margin: 0;
 }
 
@@ -184,6 +176,9 @@
   position: absolute;
   top: 41px;
   right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
 }
 
 /* Dropdown-menu stilarter */
@@ -195,30 +190,26 @@
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 259%;
+  top: 200%;
   left: -28px;
-  background-color: #fff;
-  border-top: #eeeeee solid 1px;
-  border-bottom: #eeeeee solid 1px;
-  padding: 60px 684px;
+  background-color: #ffffff;
+  border-top: #ffffff solid 1px;
+  border-bottom: #ffffff solid 1px;
+  padding: 30px 684px;
   padding-left: 30px;
+  line-height: 1.5rem;
 }
 
 .dropdown-menu.active {
   display: block;
-  width: 1448px;
-  height: 324.8px;
+  width: 100px;
+  height: 500px;
   padding-right: 199px;
-}
-
-.menu_img {
-  width: 137%;
-  padding-left: 93px;
 }
 
 .dropdown-column {
   float: left;
-  width: 15%;
+  width: 10%;
 }
 
 .dropdown-column h3 {
@@ -329,13 +320,13 @@ a {
     text-align: center; /* Justér tekst til centrum */
   }
 
-  .cart-icon {
+  .search-icon {
     text-align: end;
     margin-right: 10px;
     cursor: pointer;
   }
 
-  #cart_burger {
+  #search_burger {
     font-size: 1.5rem;
     position: absolute;
     left: 93%;
@@ -402,11 +393,18 @@ a {
     display: none;
   }
 
-  .cart-icon.active {
+  .search-icon.active {
     display: none;
   }
 }
-    </style>
+
+
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+
+</style>
 
 
 
@@ -416,7 +414,7 @@ a {
 
 
 
-    <script>
+<script>
         // Find elementer
 const dropdownLinks = document.querySelectorAll(".dropdown-link");
 
@@ -444,14 +442,14 @@ dropdownLinks.forEach((link) => {
 const burgerMenu = document.querySelector("#burger-menu");
 const menuLinks = document.querySelector(".menu-links");
 const flexItem = document.querySelector(".flex_item");
-const cartIcon = document.querySelector(".cart-icon");
+const searchIcon = document.querySelector(".search-icon");
 
 // Tilføj eventlistener til burgermenuen for at åbne/lukke menuen
 burgerMenu.addEventListener("click", function () {
   menuLinks.classList.toggle("active");
   flexItem.classList.toggle("active");
-  cartIcon.classList.toggle("active");
+  searchIcon.classList.toggle("active");
   burgerMenu.querySelector(".burger-icon").classList.toggle("active");
 });
 
-    </script>
+</script>
