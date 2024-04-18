@@ -1,0 +1,457 @@
+---
+
+---
+
+<header>
+        <!-- MENU -->
+        <nav class="navbar">
+            <ul class="left-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-link">Shop</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-column">
+                            <h3 class="#">Om os</h3>
+                            <a href="#">Samarbejde</a>
+                            <a href="#">Støt</a>
+                            <a href="#">Kontakt</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <a href="#">Skjorter</a>
+                            <a href="#">Tørklæder</a>
+                            <a href="#">Gardiner</a>
+                            <a href="#">Vægværker</a>
+                            <a href="#">Puder</a>
+                            <a href="#">Stofservietter</a>
+                            <a href="#">Te-& kaffehætter</a>
+                            <a href="#">Clutch</a>
+                            <a href="#">Eye Pillows</a>
+                            <a href="#">Workshops</a>
+                            <a href="#">Gavekort</a>
+                            <a href="#">FRAK x ITMV</a>
+                            <a href="#">Gardinbestilling</a>
+                            <a href="#">Butik</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Community</a></li>
+                <li><a href="omos.html">Om os</a></li>
+                <li><a href="#">Gavekort</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="logo">
+                <a href="index.stro"><img src="/img/logo.webp" width="400"> alt="Logo"></a>
+            </div>
+
+
+
+
+
+
+            <div class="right-menu">
+                <div class="icon">
+                    <a href="" class="icon"><iconify-icon icon="iconamoon:search-thin"></iconify-icon></a>
+                </div>
+                <div class="icon">
+                    <a href="" class="icon"> <iconify-icon icon="ph:heart-thin"></iconify-icon></a>
+                </div>
+                <div class="icon">
+                    <a href="checkout.html" class="icon" id="cart"><iconify-icon
+                            icon="ph:shopping-cart-thin"></iconify-icon></a>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- BURGERMENU -->
+        <nav class="navbar2">
+            <div id="burger-menu" class="flex_item1">
+                <div class="burger-icon">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+            <ul class="menu-links">
+                <li><a href="produktoversigt.html">Shop</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="omos.html">Om os</a></li>
+                <li><a href="#">Gavekort</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="flex_item">
+                <a href="index.html"><img src="billeder/jørnæs_logo.svg" alt="Logo" id="logo_burger"></a>
+            </div>
+            <div class="flex_item">
+                <div class="cart-icon">
+                    <iconify-icon icon="ph:shopping-cart-thin"></iconify-icon>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <style>
+
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gron: #3cb371;
+}
+
+.header_text {
+  width: 100%;
+  padding: 3px 0;
+  margin: 0;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.7rem;
+  text-align: center;
+  color: var(--gron);
+  background-color: #efefef;
+  box-sizing: border-box;
+}
+
+/* Navbar stilarter */
+#burger_menu {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 35px 20px 30px 20px;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: var(--gron);
+}
+
+.logo img {
+  display: block;
+  position: absolute;
+  left: 48%;
+  top: 48px;
+  width: 50px;
+}
+
+.icon {
+  background-color: white;
+  color: #000000;
+  cursor: pointer;
+  width: 90%;
+  padding: 21px 20px 0px 3px;
+  border: none;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+
+#cart {
+  margin: 0;
+}
+
+.right-menu {
+  display: flex;
+  position: absolute;
+  top: 41px;
+  right: 0;
+}
+
+/* Dropdown-menu stilarter */
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 259%;
+  left: -28px;
+  background-color: #fff;
+  border-top: #eeeeee solid 1px;
+  border-bottom: #eeeeee solid 1px;
+  padding: 60px 684px;
+  padding-left: 30px;
+}
+
+.dropdown-menu.active {
+  display: block;
+  width: 1448px;
+  height: 324.8px;
+  padding-right: 199px;
+}
+
+.menu_img {
+  width: 137%;
+  padding-left: 93px;
+}
+
+.dropdown-column {
+  float: left;
+  width: 15%;
+}
+
+.dropdown-column h3 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.dropdown-column a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.h3_menu {
+  font-size: 1rem;
+}
+
+a {
+  font-size: 0.9rem;
+}
+
+a:hover {
+  color: var(--gron);
+}
+
+/* Styling af "dropdown"-link */
+.dropdown-link {
+  text-decoration: none;
+  position: relative;
+}
+
+.dropdown-link:hover,
+.dropdown-link:active {
+  text-decoration: none;
+  color: var(--gron);
+}
+
+/* Understregning under "dropdown-link"-link */
+.dropdown-link:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--gron);
+  position: absolute;
+  bottom: -3px;
+  transition: width 0.3s ease;
+}
+
+.dropdown-link:hover:after,
+.dropdown-link:active:after {
+  width: 100%;
+}
+
+.dropdown-link.active:after {
+  width: 100%;
+  background-color: #000;
+}
+
+/* BURGERMENU */
+.navbar2 {
+  display: none;
+}
+
+.burger-menu {
+  display: none; /* Skjul burgermenuen som standard */
+  cursor: pointer;
+}
+
+.burger-icon {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 2px 8px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+a {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Vis burgermenuen ved max-bredde (mobilvisning) */
+@media screen and (max-width: 900px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar2 {
+    display: flex;
+    width: 100%;
+  }
+
+  .flex_item {
+    flex: 1; /* Flex-grow sat til 1 for at lade dem fylde lige stor plads */
+    text-align: center; /* Justér tekst til centrum */
+  }
+
+  .cart-icon {
+    text-align: end;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  #cart_burger {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 93%;
+    top: 10%;
+  }
+
+  #logo_burger {
+    position: absolute;
+    left: 44%;
+    width: 50px;
+  }
+
+  .navbar2 {
+    padding-top: 10px;
+  }
+
+  .navbar2 ul {
+    list-style-type: none;
+  }
+
+  .navbar2 a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .menu-links {
+    display: none; /* Skjul menu-links (normal navigation) i mobilvisning */
+  }
+
+  .menu-links.active {
+    display: block; /* Vis menu-links, når burgermenuen er åben */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 66px 88px 350px 20px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  /* Burger-ikon animation til at vise åben/lukket tilstand */
+  .burger-icon.active .line-1 {
+    transform: rotate(-45deg) translate(-6px, 7px);
+  }
+
+  .burger-icon.active .line-2 {
+    opacity: 0;
+  }
+
+  .burger-icon.active .line-3 {
+    transform: rotate(45deg) translate(-6px, -7px);
+  }
+
+  .flex_item.active {
+    display: none;
+  }
+
+  .cart-icon.active {
+    display: none;
+  }
+}
+    </style>
+
+
+
+
+
+
+
+
+
+    <script>
+        // Find elementer
+const dropdownLinks = document.querySelectorAll(".dropdown-link");
+
+// Tilføj eventlistener til hver dropdown-link
+dropdownLinks.forEach((link) => {
+  link.addEventListener("mousedown", function (event) {
+    event.preventDefault();
+    const dropdownMenu = this.nextElementSibling;
+    dropdownMenu.classList.toggle("active");
+  });
+
+  // Luk dropdown-menuen, når man klikker udenfor
+  document.addEventListener("click", function (event) {
+    if (!link.contains(event.target)) {
+      const dropdownMenus = document.querySelectorAll(".dropdown-menu");
+      dropdownMenus.forEach((menu) => {
+        menu.classList.remove("active");
+      });
+    }
+  });
+});
+
+// BURGERMENU
+// Find burgermenu og menu-links
+const burgerMenu = document.querySelector("#burger-menu");
+const menuLinks = document.querySelector(".menu-links");
+const flexItem = document.querySelector(".flex_item");
+const cartIcon = document.querySelector(".cart-icon");
+
+// Tilføj eventlistener til burgermenuen for at åbne/lukke menuen
+burgerMenu.addEventListener("click", function () {
+  menuLinks.classList.toggle("active");
+  flexItem.classList.toggle("active");
+  cartIcon.classList.toggle("active");
+  burgerMenu.querySelector(".burger-icon").classList.toggle("active");
+});
+
+    </script>
