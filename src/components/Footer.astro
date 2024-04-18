@@ -5,7 +5,7 @@
 
  <footer>
 
-        <div class="footercontainer">
+    <section class="footer_grid_1_1">
             <div class="footernav">
                 <ul>
                     <li><a href="#">Om os</a></li>
@@ -34,10 +34,44 @@
                 </ul>
             </div>
         </div>
+        </section>
     </footer>
 
 
     <style>
 
+footer{
+    background-color: #ffffff;
+}
 
+@media (min-width: 800px) {
+.footer_grid_1_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 60px;
+    padding-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+  li {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    line-height: 2rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* -------------footer mobil------------*/
+.footer_grid_1_1{
+    display: none;
+}
+
+}
     </style>
