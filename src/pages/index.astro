@@ -1,31 +1,46 @@
 ---
-
 import "../styles/layout.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import Marie from "../components/Marie.astro";
-
+import Section1 from "../components/Section1.astro";
+import Section2 from "../components/Section2.astro";
 ---
 
 <html lang="da">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="robots" content="noindex,nofollow" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Forside</title>
-	</head>
-	<body>
-		<Header/>
-		<Marie/>
-		<div class="about">
-			<h1>Om i tråd med verden</h1>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non excepturi quasi, veritatis ullam possimus totam ad est ab vel iusto dolore blanditiis. Iste, nostrum! Hic facilis amet repellat doloremque!</p>
-			<img src="/img/alle.webp" width="1200">
-		</div>
-		<Footer/>
-		
-		
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Forside</title>
+  </head>
+  <body>
+    <Header />
+    <div class="about">
+      <h1>Om i tråd med verden</h1>
+      <div id="keywords">
+        <h3>KEYWORD</h3>
+        <h3>KEYWORD</h3>
+        <h3>KEYWORD</h3>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non
+        excepturi quasi, veritatis ullam possimus totam ad est ab vel iusto
+        dolore blanditiis. Iste, nostrum! Hic facilis amet repellat doloremque!
+      </p>
+      <img src="/img/alle.webp" width="1200" />
+    </div>
+    <Section1 id="sec1" />
+    <Section2 id="sec2" />
+    <Footer />
+  </body>
 </html>
+
+<style>
+  #keywords {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+</style>
