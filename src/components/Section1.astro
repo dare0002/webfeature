@@ -14,7 +14,7 @@
     ut in autem tenetur aspernatur ex blanditiis.
   </p>
 </div>
-<div class="cont2">
+<div class="con2">
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem perferendis
     ut saepe officiis error! Magnam fuga exercitationem praesentium rerum
@@ -22,28 +22,48 @@
     repudiandae ea repellat?
   </p>
   <div id="billede_container2">
-    <img src="./img/gardin.png" alt="" />
+    <img src="./illustrationer/groen.svg" alt="" />
+    <img src="./img/gardin.png" alt="" id="billede2_2" />
   </div>
 </div>
 
 <style>
+  .con1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   #billede_container1 {
-    /* display: flex;
-    position: relative; */
+    display: flex;
     background-image: url(./illustrationer/orange.svg);
     background-repeat: no-repeat;
-    background-size: 50%;
-    /* justify-content: left;
-    align-content: center; */
-    /* width: 50%; */
+    background-size: 80%;
+    height: 30em;
+    justify-content: center;
+    align-items: center;
   }
   #billede1 {
-    width: 30%;
+    width: 40%;
     height: auto;
-    /* position: absolute; */
-    top: 10%;
   }
-  #billede2 {
-    width: 50%;
+
+  #billede_container2 {
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #billede2_2 {
+    z-index: 1;
+    height: 40%;
+    width: auto;
+    position: absolute;
+  }
+  img {
+    height: 30em;
+  }
+  .con2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 </style>

@@ -9,6 +9,8 @@ body {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -42,4 +44,5 @@ p {
   letter-spacing: 1px;
   font-weight: 400;
   letter-spacing: 0.16em;
+  max-width: 70ch;
 }
