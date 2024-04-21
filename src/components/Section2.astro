@@ -3,3 +3,47 @@
 ---
 
 <h2>Indgå samarbejde med ITMV</h2>
+<div class="container1">
+  <div id="text">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui id
+      natus aliquam modi sed vero accusamus sint, voluptas, placeat minus
+      deserunt ad rerum pariatur eveniet. Iure, ratione! Vel, aut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in temporibus
+      sed quae nobis tempore commodi totam? Quo itaque maxime ipsa molestiae
+      eveniet. Ea sint pariatur tempore iusto voluptate eaque.
+    </p>
+  </div>
+  <div id="billede_con1_1">
+    <img src="./img/ph2.png" alt="" id="billede1_1" />
+    <img src="./illustrationer/blaa.svg" alt="" id="billede1_2" />
+  </div>
+</div>
+
+<style>
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #billede_con1_1 {
+    grid-column: 2;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  #billede1_1 {
+    z-index: 1;
+    height: 70%;
+    width: auto;
+    position: absolute;
+  }
+  #billede1_2 {
+    height: 100%;
+    width: auto;
+  }
+</style>
