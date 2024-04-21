@@ -6,7 +6,7 @@
 <div class="con1">
   <div id="billede_container1">
     <img src="./img/skilt.png" alt="skilt" id="billede1" />
-    <!-- <img src="./illustrationer/orange.svg" alt="" id="billede2" /> -->
+    <img src="./illustrationer/orange.svg" alt="" id="billede1_2" />
   </div>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa harum,
@@ -22,7 +22,7 @@
     repudiandae ea repellat?
   </p>
   <div id="billede_container2">
-    <img src="./illustrationer/groen.svg" alt="" />
+    <img src="./illustrationer/groen.svg" alt="" id="billede2_1" />
     <img src="./img/gardin.png" alt="" id="billede2_2" />
   </div>
 </div>
@@ -34,16 +34,21 @@
   }
   #billede_container1 {
     display: flex;
-    background-image: url(./illustrationer/orange.svg);
+    /* background-image: url(./illustrationer/orange.svg);
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 80%; */
     height: 30em;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   #billede1 {
-    width: 40%;
-    height: auto;
+    /* width: 40%;
+    height: auto; */
+    z-index: 1;
+    height: 70%;
+    width: auto;
+    position: absolute;
   }
 
   #billede_container2 {
@@ -55,12 +60,13 @@
   }
   #billede2_2 {
     z-index: 1;
-    height: 40%;
+    height: 70%;
     width: auto;
     position: absolute;
   }
-  img {
-    height: 30em;
+  #billede2_1 {
+    height: 130%;
+    width: auto;
   }
   .con2 {
     display: grid;
