@@ -1,7 +1,115 @@
 ---
 
 ---
+
 <h2>MÅNEDENS KVINDE</h2>
+<div class="container">
+    <div class="col1">
+        <img src="./img/luna.jpg" alt="luna"/>
+    </div>
+  <div class="col2">
+    <p class="kvinde">
+        Luna <br>
+        27 år <br>
+        Danmark <br>
+    </p>
+    </div>
+  </div>
+</div>
+
+<h2>MÅNEDENS KVINDE</h2>
+<div class="container1">
+  <div id="text">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui id
+      natus aliquam modi sed vero accusamus sint, voluptas, placeat minus
+      deserunt ad rerum pariatur eveniet. Iure, ratione! Vel, aut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in temporibus
+      sed quae nobis tempore commodi totam? Quo itaque maxime ipsa molestiae
+      eveniet. Ea sint pariatur tempore iusto voluptate eaque.
+    </p>
+  </div>
+  <div id="billede_con1_1">
+    <img src="./img/clothing.jpg" alt="tøj"id="billede1_1" />
+    <img src="./illustrationer/blaa.svg" alt="" id="billede1_2" />
+    <img src="./img/symaskine.svg" alt="symaskine"id="billede1_3" />
+  </div>
+</div>
+
+<div class="symaskine">
+
+</div>
+    <img src="./img/symaskine.svg" alt="symaskine"id="billede1_3" />
+<style>
+
+
+h2 {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container > * {
+    margin-bottom: 20px; 
+}
+
+.col1 img {
+    width: 500px;
+}
+
+
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #billede_con1_1 {
+    grid-column: 2;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  #billede1_1 {
+    z-index: 1;
+    height: 70%;
+    width: auto;
+    position: absolute;
+  }
+  #billede1_2 {
+    height: 100%;
+    width: auto;
+  }
+
+  #billede1_3 {
+    height: 30%;
+    width: auto;
+    z-index: 1;
+    position: absolute;
+    padding-right: 350px;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h2>MÅNEDENS KVINDE</h2>
 <div class="container">
     <div class="col1">
         <img src="./img/luna.jpg" alt="luna"/>
@@ -84,4 +192,4 @@ h2 {
 }
 .col4 img {
     width: 400px;
-}
+} -->
