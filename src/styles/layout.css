@@ -39,6 +39,11 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: "Amiri", serif;
+  color: #e04545;
+}
+
 p {
   font-family: "helvetica", sans-serif;
   color: #000000;
