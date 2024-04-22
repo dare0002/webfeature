@@ -25,30 +25,37 @@ const { id } = Astro.props;
     <img src="./illustrationer/groen.svg" alt="" id="billede2_1" />
     <img src="./img/gardin.png" alt="" id="billede2_2" />
   </div>
+  <img src="./illustrationer/sort_sloejfe.png" alt="" id="sloejfe" />
 </div>
 
 <style>
+  h2 {
+    margin-top: 8rem;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 2rem;
+  }
   .con1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
   #billede_container1 {
     display: flex;
-    /* background-image: url(./illustrationer/orange.svg);
-    background-repeat: no-repeat;
-    background-size: 80%; */
     height: 30em;
     justify-content: center;
     align-items: center;
     position: relative;
   }
   #billede1 {
-    /* width: 40%;
-    height: auto; */
     z-index: 1;
     height: 70%;
     width: auto;
     position: absolute;
+  }
+  #billede1_2 {
+    width: 70%;
   }
 
   #billede_container2 {
@@ -65,11 +72,19 @@ const { id } = Astro.props;
     position: absolute;
   }
   #billede2_1 {
-    height: 130%;
+    height: 100%;
     width: auto;
   }
   .con2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #sloejfe {
+    width: 11%;
+    position: absolute;
+    left: 10%;
+    bottom: -40%;
   }
 </style>

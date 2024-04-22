@@ -23,6 +23,12 @@ const { id } = Astro.props;
 </div>
 
 <style>
+  h2 {
+    margin-top: 16rem;
+    z-index: 1;
+    position: relative;
+    margin-bottom: -3rem;
+  }
   .container1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -45,5 +51,11 @@ const { id } = Astro.props;
   #billede1_2 {
     height: 100%;
     width: auto;
+  }
+  #text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 </style>

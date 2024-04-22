@@ -9,6 +9,9 @@
 body {
   background: #f0eeeb;
 }
+main {
+  margin: 5rem;
+}
 
 img {
   display: block;
@@ -52,5 +55,8 @@ p {
   letter-spacing: 1px;
   font-weight: 400;
   letter-spacing: 0.16em;
-  max-width: 70ch;
+  max-width: 65ch;
+  height: fit-content;
+  background-color: #f0eeeb;
+  border-radius: 3px;
 }
