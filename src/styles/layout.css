@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -15,10 +17,10 @@ img {
 }
 
 h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Amiri", serif;
   color: #e04545;
   font-size: 4rem;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   margin-top: 140px;
@@ -27,10 +29,10 @@ h1 {
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Amiri", serif;
   color: #e04545;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.16em;
@@ -38,7 +40,7 @@ h2 {
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "helvetica", sans-serif;
   color: #000000;
   font-size: 16px;
   line-height: 1.9;
