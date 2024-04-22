@@ -22,27 +22,32 @@ import Squiggle from "../components/Squiggle.astro";
   </head>
   <body>
     <Header />
-    <div class="about">
-      <h1>Om i tråd med verden</h1>
-      <div id="keywords">
-        <h3>KEYWORD</h3>
-        <h3>KEYWORD</h3>
-        <h3>KEYWORD</h3>
+    <main>
+      <div class="about">
+        <h1>Om i tråd med verden</h1>
+        <div id="keywords">
+          <h3>KEYWORD</h3>
+          <h3>KEYWORD</h3>
+          <h3>KEYWORD</h3>
+        </div>
+        <div id="index_text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non
+            excepturi quasi, veritatis ullam possimus totam ad est ab vel iusto
+            dolore blanditiis. Iste, nostrum! Hic facilis amet repellat
+            doloremque!
+          </p>
+        </div>
+        <img src="/img/alle.webp" width="1200" />
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non
-        excepturi quasi, veritatis ullam possimus totam ad est ab vel iusto
-        dolore blanditiis. Iste, nostrum! Hic facilis amet repellat doloremque!
-      </p>
-      <img src="/img/alle.webp" width="1200" />
-    </div>
-    <Section1 id="sec1" />
-    <Section2 id="sec2" />
-    <Banner1 />
-    <Section3 id="sec3" />
-    <Banner2 />
-    <Section4 id="sec4" />
-    <Squiggle />
+      <Section1 id="sec1" />
+      <Section2 id="sec2" />
+      <Banner1 />
+      <Section3 id="sec3" />
+      <Banner2 />
+      <Section4 id="sec4" />
+      <Squiggle />
+    </main>
     <Footer />
   </body>
 </html>
@@ -51,6 +56,14 @@ import Squiggle from "../components/Squiggle.astro";
   #keywords {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+  }
+  h1 {
+    margin-bottom: 0;
+  }
+  #index_text {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
   }
 </style>
