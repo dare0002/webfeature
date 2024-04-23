@@ -9,9 +9,10 @@
 
 :root {
   --background_color: #f0eeeb;
-  --black90: ##292321;
+  --black90: #292321;
   --red50: #e04545;
 }
+
 body {
   background: var(--background_color);
 }
