@@ -2,19 +2,18 @@
 const { id } = Astro.props;
 ---
 
-
-<h2 id={id}>MÅNEDENS KVINDE</h2>
+<div id={id}></div>
+<h2>MÅNEDENS KVINDE</h2>
 <div class="container">
-    <div class="col1">
-        <img src="./img/luna.jpg" alt="luna"/>
-    </div>
+  <div class="col1">
+    <img src="./img/luna.jpg" alt="luna" />
+  </div>
   <div class="col2">
     <p class="kvinde">
-        Luna <br>
-        27 år <br>
-        Danmark <br>
+      Luna <br />
+      27 år <br />
+      Danmark <br />
     </p>
-    </div>
   </div>
 </div>
 
@@ -33,39 +32,34 @@ const { id } = Astro.props;
     </p>
   </div>
   <div id="billede_con1_1">
-    <img src="./img/clothing.jpg" alt="tøj"id="billede1_1" />
+    <img src="./img/clothing.jpg" alt="tøj" id="billede1_1" />
     <img src="./illustrationer/blaa.svg" alt="" id="billede1_2" />
-    <img src="./img/symaskine.svg" alt="symaskine"id="billede1_3" />
+    <img src="./img/symaskine.svg" alt="symaskine" id="billede1_3" />
   </div>
 </div>
 
-<div class="symaskine">
-
-</div>
-    <img src="./img/symaskine.svg" alt="symaskine"id="billede1_3" />
+<div class="symaskine"></div>
+<img src="./img/symaskine.svg" alt="symaskine" id="billede1_3" />
 <style>
-
-
-h2 {
+  h2 {
     margin-top: 70px;
     margin-bottom: 50px;
-}
+  }
 
-.container {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
+  }
 
-.container > * {
-    margin-bottom: 20px; 
-}
+  .container > * {
+    margin-bottom: 20px;
+  }
 
-.col1 img {
+  .col1 img {
     width: 500px;
-}
-
+  }
 
   .container1 {
     display: grid;
@@ -99,16 +93,6 @@ h2 {
     padding-right: 350px;
   }
 </style>
-
-
-
-
-
-
-
-
-
-
 
 <!-- <h2>MÅNEDENS KVINDE</h2>
 <div class="container">
@@ -189,3 +173,4 @@ h2 {
     width: 400px;
 }
 
+-->
