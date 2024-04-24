@@ -2,37 +2,38 @@
 const { id } = Astro.props;
 ---
 
-<div id={id}></div>
-<h2>Hvem er ITMV</h2>
-<div class="con1">
-  <div id="billede_container1">
-    <img src="./img/skilt.png" alt="skilt" id="billede1" />
-    <img src="./illustrationer/orange.svg" alt="" id="billede1_2" />
+<div id={id} class="bigcontainer">
+  <h2>Hvem er ITMV</h2>
+  <div class="con1">
+    <div id="billede_container1">
+      <img src="./img/skilt.png" alt="skilt" id="billede1" />
+      <img src="./illustrationer/orange.svg" alt="" id="billede1_2" />
+    </div>
+    <p>
+      I hjertet af deres initiativ er sy- og designværksteder, der er strategisk
+      placeret i udsatte boligområder. Her bliver kasserede tekstiler forvandlet
+      til kunstværker, med hver sting fortællende en historie om genopretning og
+      fornyelse. Men ITMV handler ikke kun om at genanvende stoffer - det
+      handler om at genopbygge samfund. Med et team bestående af syersker i
+      fleksjob eller småjob samt borgere i virksomhedspraktik, bliver
+      produktionen af disse unikke kreationer et kollektivt projekt. Her bliver
+      hver søm ikke bare et skridt mod et færdigt produkt, men også et skridt
+      mod en stærkere, mere sammenhængende samfund.
+    </p>
   </div>
-  <p>
-    I hjertet af deres initiativ er sy- og designværksteder, der er strategisk
-    placeret i udsatte boligområder. Her bliver kasserede tekstiler forvandlet
-    til kunstværker, med hver sting fortællende en historie om genopretning og
-    fornyelse. Men ITMV handler ikke kun om at genanvende stoffer - det handler
-    om at genopbygge samfund. Med et team bestående af syersker i fleksjob eller
-    småjob samt borgere i virksomhedspraktik, bliver produktionen af disse
-    unikke kreationer et kollektivt projekt. Her bliver hver søm ikke bare et
-    skridt mod et færdigt produkt, men også et skridt mod en stærkere, mere
-    sammenhængende samfund.
-  </p>
-</div>
-<div class="con2">
-  <p>
-    Det faste team hos ITMV sikrer et kontinuerligt flow, fleksibilitet og
-    tryghed i produktionsprocessen. Deres ekspertise ligger i at forstå og
-    værdsætte den enkeltes ressourcer og skabe succesoplevelser, motivation og
-    troen på en bedre fremtid.
-  </p>
-  <div id="billede_container2">
-    <img src="./illustrationer/groen.svg" alt="" id="billede2_1" />
-    <img src="./img/gardin.png" alt="" id="billede2_2" />
+  <div class="con2">
+    <p>
+      Det faste team hos ITMV sikrer et kontinuerligt flow, fleksibilitet og
+      tryghed i produktionsprocessen. Deres ekspertise ligger i at forstå og
+      værdsætte den enkeltes ressourcer og skabe succesoplevelser, motivation og
+      troen på en bedre fremtid.
+    </p>
+    <div id="billede_container2">
+      <img src="./illustrationer/groen.svg" alt="" id="billede2_1" />
+      <img src="./img/gardin.png" alt="" id="billede2_2" />
+    </div>
+    <img src="./illustrationer/sort_sloejfe.png" alt="" id="sloejfe" />
   </div>
-  <img src="./illustrationer/sort_sloejfe.png" alt="" id="sloejfe" />
 </div>
 
 <style>

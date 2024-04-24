@@ -16,7 +16,7 @@
 body {
   background: var(--background_color);
 }
-main {
+.bigcontainer {
   margin: 5rem;
 }
 
