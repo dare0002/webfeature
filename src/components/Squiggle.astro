@@ -2,6 +2,7 @@
 
 ---
 
+<!--  Kode lånt fra youtube -->
 <svg
   width="1512"
   height="9394"
@@ -33,7 +34,7 @@
     right: 0;
     width: 100vw;
     height: 300vw;
-    stroke: #e04545;
+    stroke: var(--red50);
     z-index: -1;
   }
 </style>
@@ -47,7 +48,7 @@
     const totalDistance = svg.clientHeight - window.innerHeight;
 
     const percentage = distance / totalDistance;
-    console.log(distance, totalDistance, percentage);
+    console.log({ distance }, { totalDistance }, { percentage });
 
     const pathLength = path.getTotalLength();
 
