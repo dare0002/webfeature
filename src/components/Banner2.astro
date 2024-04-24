@@ -3,42 +3,74 @@
 ---
 
 
-<div class="banner">
-    <div class="indhold">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Impedit cupiditate libero ea blanditiis accusamus facilis nobis delectus, aut dicta omnis</p>
-    </div>
-    <div class="indhold">
-        <img src="./img/statestik.png" alt="banner1">
-    </div>
-    <div class="indhold">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi soluta consectetur omnis nesciunt saepe,
-            accusamus quo laudantium quae sit expedita  </p>
-    </div>
-    <div class="indhold">
-        <img src="./img/statestik.png" alt="banner1">
+
+<div class="container">
+    <div class="banner">
+        <img src="./illustrationer/greenbanner_1.svg" alt="banner2">
+        <div class="columns">
+            <div class="column">
+                <p class="numbers">
+                    1400 L <br> vand
+                </p>
+            </div>
+            <div class="column">
+                <p>En T-shirt kræver omkring 1.400 liter vand for at blive produceret, hvilket illustrerer den betydelige vandmængde involveret i tekstilproduktionen.</p>
+            </div>
+            <div class="column">
+                <p class="numbers">
+                    15 kg <br> co^2
+                </p>
+            </div>
+            <div class="column">
+                <p>Gennemsnitligt udledes der 15 kg CO2 for hver eneste kilo tekstil, der produceres.</p>
+            </div>
+        </div>
     </div>
 </div>
 
 <style>
 
+.container {
+    position: relative; /* Gör behållaren relativt positionerad */
+}
+
+.container p{
+    background-color: transparent;
+}
 
 .banner {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    gap: 40px;
-}
-
-/* .billeder {
-    flex: 0 0 auto;
-}
-
-.billeder img {
     max-width: 100%;
-    height: auto;
-} */
+}
+
+.columns {
+    position: absolute; /* Gör kolumnerna absolut positionerade */
+    top: 50%; /* Placera kolumnerna vertikalt i mitten av behållaren */
+    left: 50%; /* Placera kolumnerna horisontellt i mitten av behållaren */
+    transform: translate(-50%, -50%); /* Justera positionen för att centrera kolumnerna */
+    display: flex;
+    width: 90%;
+    z-index: 1;
+}
+
+.column {
+    flex: 1;
+    border-radius: 5px;
+    max-width: 300px;
+    margin: 130px 10px 10px 10px; 
+}
+
+.numbers {
+  font-family: "Amiri", serif;
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  text-align: center;
+  padding-top: 30px;
+}
+
+</style>
+
+

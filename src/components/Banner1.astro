@@ -2,53 +2,86 @@
 
 ---
 
-
-<div class="banner">
-    <!-- <img src="./illustrationer/orange_svg" alt="illustration" id="orange"> -->
-    <div class="billeder">
-        <img src="./img/banner1.png" alt="banner1">
-    </div>
-    <div class="billeder">
-        <img src="./img/banner2.png" alt="banner1">
-    </div>
-    <div class="billeder">
-        <img src="./img/banner3.png" alt="banner1">
+<div class="container">
+    <div class="banner">
+        <img src="./illustrationer/orangebanner_1.svg" alt="banner1">
+        <div class="columns">
+            <div class="column">
+                <div class="content">
+                    <p class="numbers">
+                        37% 
+                    </p>
+                    <p>af virksomhederne oplever at mangel på ressourcer og tid er en barrierer </p>
+                </div>
+            </div>
+            <div class="column">
+                <p class="middletext">Den største gevinst for virksomhederne ved deres CSR arbejde er, at det forbedrer deres omdømme.</p>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <p class="numbers">
+                        69%
+                    </p>
+                    <p>af medlemsvirksomhederne oplever barrierer i arbejdet med CSR.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 <style>
 
+.container {
+    position: relative; /* Gör behållaren relativt positionerad */
+}
+
+.container p{
+    background-color: transparent;
+}
 
 .banner {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-    margin-top: 200px;
-    margin-bottom: 200px;
-}
-
-.billeder {
-    flex: 0 0 auto;
-}
-
-.billeder img {
     max-width: 100%;
-    height: auto;
 }
 
-/* .banner {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.columns {
+    position: absolute; /* Gör kolumnerna absolut positionerade */
+    top: 50%; /* Placera kolumnerna vertikalt i mitten av behållaren */
+    left: 50%; /* Placera kolumnerna horisontellt i mitten av behållaren */
+    transform: translate(-50%, -50%); /* Justera positionen för att centrera kolumnerna */
+    display: flex;
+    width: 80%;
+    z-index: 1;
+    gap: 60px;
 }
 
-.billeder {
-    width: 100px;
-    max-width: 1000px;
+.column {
+    flex: 1;
+    border-radius: 5px;
+    margin: -30px 10px 10px 10px; 
+}
+
+.numbers {
+  font-family: "Amiri", serif;
+  color: black;
+  font-size: 4rem;
+  font-weight: 700;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  text-align: center;
+  /* padding-top: 30px; */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-} */
+    padding-top: 10px;
+}
 
+.middletext {
+    margin-top: 80px;
+}
 
 </style>
+
