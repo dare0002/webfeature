@@ -26,9 +26,9 @@ import Banner2 from "../components/Banner2.astro";
       <div class="about">
         <h1>Om i tråd med verden</h1>
         <div id="keywords">
-          <h3>KEYWORD</h3>
-          <h3>KEYWORD</h3>
-          <h3>KEYWORD</h3>
+          <h3>MANGFOLDIGT</h3>
+          <h3>NÆRVÆRENDE</h3>
+          <h3>BÆREDYGTIGT</h3>
         </div>
         <div id="index_text">
           <p>
@@ -38,7 +38,7 @@ import Banner2 from "../components/Banner2.astro";
             gangen.
           </p>
         </div>
-        <img src="/img/alle.webp" width="1200" />
+        <img src="/img/hero.webp" width="1200" />
       </div>
       <!-- <Squiggle /> -->
       <Section1 id="sec1" />
@@ -142,7 +142,7 @@ import Banner2 from "../components/Banner2.astro";
     const pathLength = path.getTotalLength();
 
     path.style.strokeDasharray = `${pathLength}`;
-    path.style.strokeDashoffset = `${pathLength * (1 - percentage)}`;
+    path.style.strokeDashoffset = `${pathLength * percentage}`;
   };
 
   scroll();

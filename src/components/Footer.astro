@@ -2,76 +2,83 @@
 
 ---
 
+<footer>
+  <section class="footer_grid_1_1">
+    <div class="footernav">
+      <ul>
+        <li><a href="#">Om os</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Book os</a></li>
+        <li><a href="#">Samarbejde</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Presse</a></li>
+        <li><a href="#">Handelsbetingelser</a></li>
+        <li><a href="#">Betaling</a></li>
+        <li><a href="#">Privatlivspolitik</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <h4>
+          Her finder du os <br />
+          <h4 class="adresse">Værkstedet i Lundtoftegade</h4>
+          Lundtoftegade 23, 1 sal <br />
+          2200 København N <br />
+        </h4>
+        <h4 class="adresse">Værkstedet i Farum Midtpunkt</h4>
+        Nygårdterasserne 213A <br />
+        3520 Farum <br />
+      </ul>
+    </div>
+    <div class="blaa"></div>
+  </section>
+</footer>
 
- <footer>
-
-    <section class="footer_grid_1_1">
-            <div class="footernav">
-                <ul>
-                    <li><a href="#">Om os</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Book os</a></li>
-                    <li><a href="#">Samarbejde</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Presse</a></li>
-                    <li><a href="#">Handelsbetingelser</a></li>
-                    <li><a href="#">Betaling</a></li>
-                    <li><a href="#">Privatlivspolitik</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <h4>
-                        Her finder du os <br>
-                        <h4 class="adresse">Værkstedet i Lundtoftegade</h4>
-                        Lundtoftegade 23, 1 sal <br>
-                        2200 København N <br>
-                    </h4>
-                    <h4 class="adresse">Værkstedet i Farum Midtpunkt</h4>
-                        Nygårdterasserne 213A <br>
-                        3520 Farum <br>
-                    </h4>
-                </ul>
-            </div>
-        </div>
-        </section>
-    </footer>
-
-
-    <style>
-
-footer{
+<style>
+  footer {
     background-color: #ffffff;
-}
-
-@media (min-width: 800px) {
-.footer_grid_1_1{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-left: 60px;
-    padding-bottom: 2rem;
-    margin-top: 1.5rem;
-}
-
-ul {
-    list-style: none;
-    text-decoration: none;
-    color: black;
   }
-  li {
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    line-height: 2rem;
+
+  @media (min-width: 800px) {
+    .footer_grid_1_1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-left: 60px;
+      height: 400px;
+
+      margin-top: 1.5rem;
+    }
+    .footer_grid_1_1 .footernav a {
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--black90);
+    }
+    ul {
+      list-style: none;
+      text-decoration: none;
+      color: black;
+    }
+    li {
+      text-decoration: none;
+      list-style: none;
+      color: black;
+      line-height: 2rem;
+    }
+    .blaa {
+      background-color: #3d5c6d;
+      padding: 0;
+      margin: 0;
+    }
+    h4 {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 0.5rem;
+    }
   }
-}
 
-
-@media (max-width: 768px) {
-  /* -------------footer mobil------------*/
-.footer_grid_1_1{
-    display: none;
-}
-
-}
-    </style>
+  @media (max-width: 768px) {
+    /* -------------footer mobil------------*/
+    .footer_grid_1_1 {
+      display: none;
+    }
+  }
+</style>
