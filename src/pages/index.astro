@@ -8,7 +8,7 @@ import Section3 from "../components/Section3.astro";
 import Section4 from "../components/Section4.astro";
 import Banner1 from "../components/Banner1.astro";
 import Banner2 from "../components/Banner2.astro";
-import Squiggle from "../components/Squiggle.astro";
+// import Squiggle from "../components/Squiggle.astro";
 ---
 
 <html lang="da">
@@ -32,15 +32,15 @@ import Squiggle from "../components/Squiggle.astro";
         </div>
         <div id="index_text">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non
-            excepturi quasi, veritatis ullam possimus totam ad est ab vel iusto
-            dolore blanditiis. Iste, nostrum! Hic facilis amet repellat
-            doloremque!
+            ITMV viser, hvad der er muligt, når vi syr samfundet sammen med
+            trådene af medfølelse, håb og respekt. Deres arbejde handler ikke
+            kun om at skabe produkter, men om at skabe forandringer, en søm ad
+            gangen.
           </p>
         </div>
         <img src="/img/alle.webp" width="1200" />
       </div>
-      <Squiggle />
+      <!-- <Squiggle /> -->
       <Section1 id="sec1" />
       <Section2 id="sec2" />
       <Banner1 />
@@ -49,6 +49,29 @@ import Squiggle from "../components/Squiggle.astro";
       <Section4 id="sec4" />
     </main>
     <Footer />
+    <svg
+      width="1512"
+      height="9394"
+      viewBox="0 0 1512 9394"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="squiggle"
+    >
+      <path
+        d="M1344.04 238C325.971 444.823 -2556.85 1090.86 -1072.6 1358.44C782.7 1692.93 2100.87 1455.94 1872.21 2052.91C1643.55 2649.88 -245.833 2823.87 -445.8 2576.88C-645.768 2329.89 688.545 1938.91 2130.46 3117.36C2358.83 3457 2212.96 4123.6 1162.01 4384.79C-151.679 4711.28 -1882.34 4830.27 -1201.73 5157.75C-323.256 5580.44 3613.63 5930.71 1786.12 6215.7C782.401 6356.36 -1924.3 6969.76 -1285.13 7358.14C-486.152 7843.62 2516.95 8229.6 2273.94 7815.62C2030.93 7401.64 -1231.32 8597.08 1481.24 9265.55C3651.29 9800.32 2243.75 10799 1601.4 10746"
+        stroke="#E04545"
+        stroke-width="25"></path>
+      <path
+        d="M1354.07 212.259C1342.18 214.162 1330.46 219.15 1321.79 227.818C1315.95 233.661 1307.5 249.382 1321.2 250.573C1331.8 251.495 1351.6 232.027 1340.07 226.262"
+        stroke="#C4BDBD"
+        stroke-width="12"
+        stroke-linecap="round"></path>
+      <path
+        d="M1297.67 261.068C1296.83 250.985 1292.4 240.178 1297.2 230.49C1304.33 216.064 1322.62 199.764 1339.38 199.05C1345.74 198.78 1350.83 199.709 1356.47 196.149C1364.71 190.95 1372.51 184.614 1378.74 177.097C1384.44 170.209 1388.74 162.271 1394.26 155.223C1406.05 140.179 1419.54 126.228 1431.89 111.63C1463.55 74.2333 1500.23 39.018 1539.7 10.019C1542.55 7.92609 1553.25 1.96247 1547.15 10.3326C1543.61 15.1798 1538.8 19.2259 1534.92 23.8181C1528.32 31.6169 1523.93 40.6501 1517.04 48.4368C1505.04 61.9906 1495.53 77.4155 1483.17 90.7748C1462.71 112.886 1439.54 131.682 1421.23 155.771C1415.24 163.656 1411.01 172.453 1404.45 179.763C1396.6 188.52 1389.02 197.5 1381.09 206.185C1378.91 208.566 1374.02 211.882 1373.87 215.437C1373.22 231.05 1367.83 246.428 1356.16 257.304C1347.26 265.594 1328.57 279.1 1316.09 279.1C1307.02 279.1 1301.58 268.575 1299.08 261.068"
+        stroke="#C4BDBD"
+        stroke-width="12"
+        stroke-linecap="round"></path>
+    </svg>
   </body>
 </html>
 
@@ -65,10 +88,63 @@ import Squiggle from "../components/Squiggle.astro";
     display: flex;
     justify-content: center;
     padding: 4rem;
+    text-align: center;
+  }
+  svg.squiggle {
+    position: absolute;
+    top: 200%;
+    right: 0;
+    width: 100vw;
+    height: 300vw;
+    stroke: var(--red50);
+    z-index: -1;
   }
 </style>
 
-<script>
+<!-- <script>
   const distance = window.scrollY;
   console.log(distance);
+</script> -->
+
+<!-- <script>
+  const svg = document.querySelector("svg.squiggle");
+  const path = svg.querySelector("path");
+
+  const scroll = () => {
+    const distance = window.scrollY;
+    const totalDistance = svg.clientHeight - window.innerHeight;
+
+    const percentage = distance / totalDistance;
+    console.log({ distance }, { totalDistance }, { percentage });
+
+    const pathLength = path.getTotalLength();
+
+    path.style.strokeDasharray = `${pathLength}`;
+    path.style.strokeDashoffset = `${pathLength * (1 - percentage)}`;
+  };
+
+  scroll();
+  window.addEventListener("scroll", scroll);
+</script>
+ -->
+<script>
+  const svg = document.querySelector("svg.squiggle");
+  const path = svg.querySelector("path");
+
+  const scroll = () => {
+    const distance = window.scrollY;
+    const totalDistance = document.documentElement.clientHeight;
+
+    const percentage = 1 - distance / totalDistance;
+
+    console.log({ distance }, { totalDistance }, { percentage });
+
+    const pathLength = path.getTotalLength();
+
+    path.style.strokeDasharray = `${pathLength}`;
+    path.style.strokeDashoffset = `${pathLength * (1 - percentage)}`;
+  };
+
+  scroll();
+  window.addEventListener("scroll", scroll);
 </script>
