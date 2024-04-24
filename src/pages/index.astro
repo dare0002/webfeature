@@ -40,13 +40,13 @@ import Squiggle from "../components/Squiggle.astro";
         </div>
         <img src="/img/alle.webp" width="1200" />
       </div>
+      <Squiggle />
       <Section1 id="sec1" />
       <Section2 id="sec2" />
       <Banner1 />
       <Section3 id="sec3" />
       <Banner2 />
       <Section4 id="sec4" />
-      <Squiggle />
     </main>
     <Footer />
   </body>
@@ -67,3 +67,8 @@ import Squiggle from "../components/Squiggle.astro";
     padding: 4rem;
   }
 </style>
+
+<script>
+  const distance = window.scrollY;
+  console.log(distance);
+</script>
